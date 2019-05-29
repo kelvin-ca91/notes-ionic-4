@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { WishesService } from '../../services/wishes.service';
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
-
+  constructor(
+    private wishesService: WishesService
+  ) {}
 }
