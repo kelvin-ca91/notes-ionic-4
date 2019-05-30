@@ -8,6 +8,8 @@ export class WishesService {
   lists: List[] = [];
 
   constructor() { 
-    console.log('WishesServices init');
+    const wishOne = new List('My first note');
+    const wishTwo = new List('My second note');
+    this.lists.push(wishOne, wishTwo, wishOne, wishTwo, wishOne, wishTwo, wishOne, wishTwo, wishOne, wishTwo, wishOne, wishTwo, wishOne, wishTwo);
   }
 }
